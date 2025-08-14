@@ -1,0 +1,12 @@
+# scripts/video_automation.py
+from moviepy.editor import VideoFileClip, TextClip, CompositeVideoClip
+
+def add_intro_outro(input_video, output_path, dapp_name):
+    video = VideoFileClip(input_video)
+    intro = TextClip(f"{dapp_name} - Join Cardano!", fontsize=40, color='white').set_duration(10)
+    outro = TextClip("Scan QR to try! Link in bio", fontsize=40, color='white').set_duration(5)
+    final = CompositeVideoClip([video, intro.set_pos('center'), outro.set_pos('center').set_start(video.duration)])
+    final.write(output_path, codec="libx264")
+
+# Example usage
+add_intro_outro("input.mp4", "output.mp4", "Minswap")
