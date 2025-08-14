@@ -1,0 +1,2 @@
+This folder stores project documents (e.g., Proposal PDF, budget breakdown).
+
