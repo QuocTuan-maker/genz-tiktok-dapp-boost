@@ -1,0 +1,2 @@
+This folder stores Google Forms survey exports (CSV) for Gen Z dApp awareness (1,500 responses, 60% awareness)
+
