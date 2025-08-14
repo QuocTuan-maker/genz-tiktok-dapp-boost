@@ -1,0 +1,2 @@
+This folder stores TikTok/YouTube/Instagram/X Analytics exports (e.g., CSV, screenshots for views/likes)
+
